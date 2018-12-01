@@ -10,7 +10,7 @@ class Navbar extends React.Component {
         <header>
           <nav className="main-nav">
             <ul>
-              <li><Link to="/">Logo </Link></li>
+              <li><Link to="/"><img className="logo" src={'/images/pcalcclean.png'} alt="logo-pcalc"/></Link></li>
               <li className="logIn"><Link to='/login'> Log In! </Link></li>
             </ul>
           </nav >
@@ -21,7 +21,7 @@ class Navbar extends React.Component {
         <header>
           <nav className="main-nav">
             <ul>
-              <li><Link to="/">Logo </Link></li>
+              <li><Link to="/"><img className="logo" src={'/images/pcalcclean.png'} alt="logo-pcalc"/> </Link></li>
               <li className="logIn"><Link to='/logout'> Log out! </Link></li>
             </ul>
           </nav >

@@ -110,5 +110,10 @@ h2 {
 
 }
 
+.modal-form{
+  margin-top: -15px;
+  height: 25px;
+}
+
 @media (min-width: 800px){
 }

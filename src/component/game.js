@@ -26,7 +26,7 @@ class Game extends Component {
   render() {
     const resetButton = (<button onClick={() => this.restart()} aria-label="reset">Reset</button>);
     const board = this.renderTheBoard(this.state.hand);
-    const modal = (<form
+    const modal = (<form className="modal-form"
       onSubmit={(e) => { this.setCard(e) }}>modal
       <select ref={input => this.suit = input}>
         <option value='hearts'>hearts</option>
