@@ -17,6 +17,9 @@ export function Splash(){
 
         WARNING:::::::: LOGIC NOT CURRENTLY CORRECTLY FUNCTIONAL DO NOT USE FOR TRUE ADVICE 
         </p>
+        <p>Instructions:</p>
+        <p>New Game: allows you to enter in cards and recieve the cards to hold</p>
+        <p>Training: play fast paced guesswork game to see how good you are</p>
       </div>
     </main>
   )

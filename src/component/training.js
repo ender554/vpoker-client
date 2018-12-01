@@ -57,7 +57,6 @@ class Training extends Component {
       {board}
     </div>)
     const buttons = (<div className="controls">{dealButton}    {confirmButton}    {saveButton}  {notesButton}</div>);
-    console.log(this);
     if (!this.props.game.loggedIn) {
       return (<main className="please-log-in"><h1>Please Log In</h1></main>)
     } else {

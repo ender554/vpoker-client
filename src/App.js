@@ -3,7 +3,7 @@ import Training from './component/training';
 import Game from './component/game';
 import Logout from './component/logout';
 // import ReactDOM from 'react-dom';
-import { NavBar } from './component/navbar';
+import NavBar from './component/navbar';
 import {Splash} from './component/splash';
 // import DevState from './component/devState';
 import Main from './component/main';

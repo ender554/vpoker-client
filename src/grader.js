@@ -41,6 +41,9 @@ const makeCheckableHand = (input) => {
     handTransform.push(cardString);
   }
 
+  //THIS IS WHAT WE WANT TO REPLACE
+  //return (PokerHand.solve(handTransform))
+  console.log(Hand.solve(handTransform, 'jacksbetter'))
   return (Hand.solve(handTransform, 'jacksbetter'));
 }
 

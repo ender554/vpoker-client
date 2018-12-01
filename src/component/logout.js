@@ -1,7 +1,7 @@
 import React from "react";
 import { clearAuth } from '../actions/auth';
 import { connect } from 'react-redux';
-import { saveUserData } from '../actions/auth';
+// import { saveUserData } from '../actions/auth';
 import {clearAuthToken} from '../local-storage';
 import  './training.css';
 
@@ -17,9 +17,10 @@ class Logout extends React.Component {
   }
 
   logOut(){
-    this.props.dispatch(saveUserData(this.props.game))
-    this.props.dispatch(clearAuth())
+    this.props.dispatch(clearAuth());
     clearAuthToken();
+    // setTimeout(this.props.history.push('/'), 50000);
+
   }
 
   render() {
@@ -32,8 +33,8 @@ class Logout extends React.Component {
         </div>
       );
     }
-    console.log(this);
-    if(!this.props.auth.authToken){
+    console.log(this.props.game.loggedIn);
+    if(!this.props.game.loggedIn){
       return(
         <main><h1>You are not logged in!</h1></main>
       )
