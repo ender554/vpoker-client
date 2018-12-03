@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 
 class Navbar extends React.Component {
   render() {
-    if (!this.props.game.loggedIn) {
+    if (!this.props.auth.authToken) {
       return (
         <header>
           <nav className="main-nav">

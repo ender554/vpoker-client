@@ -18,9 +18,8 @@ class Logout extends React.Component {
 
   logOut(){
     this.props.dispatch(clearAuth());
-    clearAuthToken()
-    .then(this.props.history.push('/'));
-    // setTimeout(this.props.history.push('/'), 50000);
+    clearAuthToken();
+    this.props.history.push('/');
   }
 
   render() {
@@ -34,7 +33,7 @@ class Logout extends React.Component {
       );
     }
     console.log(this.props.game.loggedIn);
-    if(!this.props.game.loggedIn){
+    if(!this.props.auth.authToken){
       return(
         <main><h1>You are not logged in!</h1></main>
       )
