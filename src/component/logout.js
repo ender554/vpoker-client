@@ -18,9 +18,9 @@ class Logout extends React.Component {
 
   logOut(){
     this.props.dispatch(clearAuth());
-    clearAuthToken();
+    clearAuthToken()
+    .then(this.props.history.push('/'));
     // setTimeout(this.props.history.push('/'), 50000);
-
   }
 
   render() {
