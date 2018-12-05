@@ -26,6 +26,7 @@ export class LoginForm extends React.Component {
 
   render() {
     let error;
+    const demoButton = (<a href="https://pcalc.herokuapp.com/" rel='noopener noreferrer' target="_blank" >Demo</a>);
     if (this.props.error) {
       error = (
         <div className="form-error" aria-live="polite">
@@ -62,6 +63,7 @@ export class LoginForm extends React.Component {
         <button type="submitRegister" onClick={this.props.handleSubmit(values =>
           this.onSubmitRegister(values)
         )}>Register</button>
+        <button>{demoButton}</button>
       </form>
     );
   }
