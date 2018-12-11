@@ -3,7 +3,7 @@
 html {
   box-sizing: border-box;
 }
-
+/* 
 @media only screen and (orientation:portrait){
 
   #container {
@@ -40,7 +40,7 @@ html {
 
   }
 
-}
+} */
 
 img {
   height: auto;
